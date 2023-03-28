@@ -43,7 +43,7 @@ public class Jump : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
-        if (jumpAmount == 0 || isGrounded)
+        if (jumpAmount == 0 && isGrounded)
         {
             jumpAmountReal = jumpAmountConstant;
         }
